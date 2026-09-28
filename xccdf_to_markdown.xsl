@@ -89,11 +89,11 @@
 
 #### Fix Text
 <xsl:value-of select="cdf:fixtext"/>
-<xsl:text>&#10;&#10;</xsl:text>
+<xsl:text></xsl:text>
 
 #### Check Content
 <xsl:value-of select="cdf:check/cdf:check-content"/>
-<xsl:text>&#10;&#10;</xsl:text>
+<xsl:text></xsl:text>
 
 <xsl:if test="cdf:ident[@system='http://cyber.mil/cci']">
 #### CCI
@@ -101,7 +101,7 @@
 - <xsl:value-of select="."/>
 <xsl:text>&#10;</xsl:text>
 </xsl:for-each>
-<xsl:text>&#10;</xsl:text>
+<xsl:text></xsl:text>
 </xsl:if>
 
 <xsl:if test="cdf:ident[@system='http://cyber.mil/legacy']">
