@@ -68,11 +68,11 @@
 
 #### Rule ID
 <xsl:value-of select="@id"/>
-<xsl:text>&#10;&#10;</xsl:text>
+<xsl:text>&#10;</xsl:text>
 
 #### STIG-ID
 <xsl:value-of select="cdf:version"/>
-<xsl:text>&#10;&#10;</xsl:text>
+<xsl:text>&#10;</xsl:text>
 
 #### Severity
 <xsl:choose>
@@ -81,7 +81,7 @@
   <xsl:when test="@severity='low'">CAT III</xsl:when>
   <xsl:otherwise><xsl:value-of select="@severity"/></xsl:otherwise>
 </xsl:choose>
-<xsl:text>&#10;&#10;</xsl:text>
+<xsl:text>&#10;</xsl:text>
 
 #### Vulnerability Discussion
 <xsl:value-of select="substring-after(substring-before(cdf:description,'&lt;/VulnDiscussion&gt;'),'&lt;VulnDiscussion&gt;')"/>
